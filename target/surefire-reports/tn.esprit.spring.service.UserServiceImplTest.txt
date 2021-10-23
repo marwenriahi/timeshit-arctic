@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: tn.esprit.spring.service.UserServiceImplTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 4.576 s <<< FAILURE! - in tn.esprit.spring.service.UserServiceImplTest
+testRetrieveAllUsers  Time elapsed: 0.279 s  <<< FAILURE!
+java.lang.AssertionError: expected:<15> but was:<3>
+	at tn.esprit.spring.service.UserServiceImplTest.testRetrieveAllUsers(UserServiceImplTest.java:32)
+
+testDeleteUser  Time elapsed: 0.026 s  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at tn.esprit.spring.service.UserServiceImplTest.testDeleteUser(UserServiceImplTest.java:63)
+

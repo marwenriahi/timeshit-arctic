@@ -1,7 +1,9 @@
 tn\esprit\spring\entities\Entreprise.class
+tn\esprit\spring\repository\EntrepriseRepository.class
 tn\esprit\spring\entities\Employe.class
 tn\esprit\spring\entities\Departement.class
 tn\esprit\spring\entities\Timesheet.class
+tn\esprit\spring\services\IEntrepriseService.class
 tn\esprit\spring\TimesheetApplication.class
 tn\esprit\spring\entities\MissionExterne.class
 tn\esprit\spring\entities\Role.class
@@ -10,5 +12,6 @@ tn\esprit\spring\services\IUserService.class
 tn\esprit\spring\entities\Mission.class
 tn\esprit\spring\entities\TimesheetPK.class
 tn\esprit\spring\repository\UserRepository.class
+tn\esprit\spring\services\EntrepriseServiceImpl.class
 tn\esprit\spring\services\UserServiceImpl.class
 tn\esprit\spring\entities\Contrat.class

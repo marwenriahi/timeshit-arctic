@@ -1,6 +1,6 @@
 package tn.esprit.spring.services;
 
-import tn.esprit.spring.entity.Mission;
+import tn.esprit.spring.entities.Mission;
 
 import java.util.List;
 

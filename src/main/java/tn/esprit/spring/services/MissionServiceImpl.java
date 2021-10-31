@@ -27,7 +27,7 @@ public class MissionServiceImpl implements IMissionService {
 	@Override
 	public long ajouterMission(Mission mission) {
 		mr.save(mission);
-		return (mission).getIdMission();
+		return (mission).getId();
 	}
 	
 	
@@ -41,11 +41,11 @@ public class MissionServiceImpl implements IMissionService {
 	@Override
 	public Mission MissionUpadate(Mission Miss) {
 		
-		Mission existingMiss=mr.findById(Miss.getId()).orElse(null);
+		Mission existingMiss=mr.findById(new Long(Miss.getId())).orElse(null);
 		
-		mr.findById(Miss.getId());
+		mr.findById(new Long(Miss.getId()));
 		existingMiss.setName(Miss.getName());
-		existingMiss.setDescriptionMission(Miss.getDescriptionMission());
+		existingMiss.setDescription(Miss.getDescription());
 		
 		return mr.save(existingMiss);
 	}

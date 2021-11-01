@@ -46,7 +46,14 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
+	<profiles>
+	<profile>
+  		<id>only-eclipse</id>
+  	<activation>
+    <property>
+      <name>m2e.version</name>
+    </property>
+  	</activation>
 	<build>
 		<plugins>
 			<plugin>
@@ -55,5 +62,16 @@
 			</plugin>
 		</plugins>
 	</build>
+	</profile>
+</profiles>
+<distributionManagement>
+    <repository>
+        <id>deploymentRepo</id>
+        <name>deploymentRepo</name>
+        <url>http://localhost:8081/repository/maven-releases/</url>
+        <layout>default</layout>
+    </repository>
+ 
+</distributionManagement>
 
 </project>
